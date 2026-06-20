@@ -10,6 +10,20 @@ const bot = mineflayer.createBot({
   viewDistance: config.botChunk
 });
 
+const BOT_PASSWORD = "YourSecretPassword123"; 
+
+bot.on('spawn', () => {
+    console.log("Bot spawned into the world! Running auth check...");
+    setTimeout(() => {
+        bot.chat(`/login ${BOT_PASSWORD}`);
+        bot.chat(`/register ${BOT_PASSWORD} ${BOT_PASSWORD}`);
+    }, 2000); // Waits 2 seconds after entry to send the commands safely
+});
+
+bot.on('kicked', (reason) => {
+    console.log(`Bot disconnected by server. Reason: ${reason}`);
+});
+
 let movementPhase = 0;
 const STEP_INTERVAL = 1500;
 const STEP_SPEED    = 1;

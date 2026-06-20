@@ -1,7 +1,7 @@
 {
-  "serverHost": "gangweng.aternos.me",
-  "serverPort": "53641",
-  "botUsername": "gngthweng",
-  "version": "26.1.2",
-  "botChunk": 1
+  "host": "gangweng.aternos.me",
+  "port": 25565,
+  "username": "gngthweng",
+  "version": "1.21"
+  "Chunk": 1
 }

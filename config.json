@@ -2,5 +2,6 @@
   "serverHost": "dory.aternos.host",
   "serverPort": "53641",
   "botUsername": "gngthweng",
+  "version": "1.21",
   "botChunk": 1
 }

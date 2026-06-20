@@ -1,6 +1,6 @@
 {
   "serverHost": "dory.aternos.host",
-  "serverPort": "",
+  "serverPort": "53641",
   "botUsername": "gngthweng",
   "botChunk": 1
 }
